@@ -1,3 +1,3 @@
-# recoprodu
+# pixplore
 
 A new Flutter project.

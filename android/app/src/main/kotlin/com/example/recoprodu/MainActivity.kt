@@ -1,4 +1,4 @@
-package com.example.recoprodu
+package com.example.pixplore
 
 import io.flutter.embedding.android.FlutterActivity
 

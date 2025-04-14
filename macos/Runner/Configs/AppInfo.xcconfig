@@ -5,10 +5,10 @@
 // 'flutter create' template.
 
 // The application's name. By default this is also the title of the Flutter window.
-PRODUCT_NAME = recoprodu
+PRODUCT_NAME = pixplore
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.example.recoprodu
+PRODUCT_BUNDLE_IDENTIFIER = com.example.pixplore
 
 // The copyright displayed in application information
 PRODUCT_COPYRIGHT = Copyright © 2025 com.example. All rights reserved.

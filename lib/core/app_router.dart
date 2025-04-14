@@ -1,6 +1,6 @@
 import 'package:go_router/go_router.dart';
-import 'package:recoprodu/presentation/chat_screen.dart';
-import 'package:recoprodu/presentation/home_welcome.dart';
+import 'package:pixplore/presentation/chat_screen.dart';
+import 'package:pixplore/presentation/home_welcome.dart';
 import '../presentation/camera_screen.dart';
 import '../features/camera/camera_preview_screen.dart';
 

@@ -88,7 +88,7 @@ class _CameraScreenState extends State<CameraScreen> {
             const Padding(
               padding: EdgeInsets.symmetric(vertical: 40),
               child: Text(
-                'RecoProdu',
+                'Pixplore',
                 style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
               ),
             ),

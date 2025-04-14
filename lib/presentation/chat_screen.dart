@@ -25,7 +25,7 @@ class _ChatScreenState extends State<ChatScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'RecoProdu',
+          'Pixplore',
           style: TextStyle(color: Colors.white),
         ),
         backgroundColor: Colors.black,

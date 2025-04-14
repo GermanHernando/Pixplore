@@ -1,6 +1,6 @@
 {
-    "name": "recoprodu",
-    "short_name": "recoprodu",
+    "name": "pixplore",
+    "short_name": "pixplore",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

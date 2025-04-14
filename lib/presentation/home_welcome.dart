@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:recoprodu/presentation/chat_screen.dart';
+import 'package:pixplore/presentation/chat_screen.dart';
 
 class HomeWelcome extends StatelessWidget {
    const HomeWelcome({super.key});
@@ -19,7 +19,7 @@ class HomeWelcome extends StatelessWidget {
         ),
         SizedBox(height: 5),
         Text(
-          'Esto es RecoProdu',
+          'Esto es Pixplore',
           style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold, color: Colors.teal),
           textAlign: TextAlign.center,
         ),
