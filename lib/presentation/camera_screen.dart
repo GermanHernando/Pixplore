@@ -4,14 +4,14 @@ import 'package:go_router/go_router.dart';
 import '../features/camera/camera_device.dart';
 import 'package:permission_handler/permission_handler.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+class CameraScreen extends StatefulWidget {
+  const CameraScreen({super.key});
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<CameraScreen> createState() => _CameraScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _CameraScreenState extends State<CameraScreen> {
   final CameraDevice _cameraDevice = CameraDevice();
   bool _isInitialized = false;
   bool _showCamera = false;
