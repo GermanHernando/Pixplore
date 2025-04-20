@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
 import 'package:go_router/go_router.dart';
-import '../features/camera/camera_device.dart';
+import '../features/camera/camera_device.dart' as local_camera;
 import 'package:permission_handler/permission_handler.dart';
 
 class CameraScreen extends StatefulWidget {
@@ -12,7 +12,7 @@ class CameraScreen extends StatefulWidget {
 }
 
 class _CameraScreenState extends State<CameraScreen> {
-  final CameraDevice _cameraDevice = CameraDevice();
+  final local_camera.CameraDevice _cameraDevice = local_camera.CameraDevice();
   bool _isInitialized = false;
   bool _showCamera = false;
 
@@ -38,12 +38,15 @@ class _CameraScreenState extends State<CameraScreen> {
 
   Future<void> _takePicture() async {
     final image = await _cameraDevice.controller?.takePicture();
-
     if (!mounted) return;
 
     if (image != null) {
       context.push('/preview', extra: image.path);
     }
+  }
+
+  void _simulateGallerySelection() {
+    context.push('/gallery-grid');
   }
 
   @override
@@ -93,23 +96,28 @@ class _CameraScreenState extends State<CameraScreen> {
               ),
             ),
             const SizedBox(height: 100),
-            Center(
-              child: InkWell(
-                onTap: _initCamera,
-                borderRadius: BorderRadius.circular(100),
-                child: Container(
-                  padding: const EdgeInsets.all(30),
-                  decoration: const BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Colors.black87,
-                  ),
-                  child: const Icon(
-                    Icons.camera_alt,
-                    size: 50,
-                    color: Colors.white,
-                  ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                IconButton(
+                  onPressed: _initCamera,
+                  icon: const Icon(Icons.camera_alt, size: 36),
+                  tooltip: 'Tomar foto',
+                  color: const Color.fromARGB(255, 34, 176, 236),
                 ),
-              ),
+                IconButton(
+                  onPressed: _simulateGallerySelection,
+                  icon: const Icon(Icons.photo_library, size: 36),
+                  tooltip: 'Elegir de galería',
+                  color: const Color.fromARGB(255, 34, 176, 236),
+                ),
+                IconButton(
+                  onPressed: Placeholder.new,
+                  icon: const Icon(Icons.link, size: 36),
+                  tooltip: 'Ingresar URL',
+                  color: const Color.fromARGB(255, 34, 176, 236),
+                ),
+              ],
             ),
           ],
         ),
