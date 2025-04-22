@@ -43,6 +43,3 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
-
-#Api keys
-#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
