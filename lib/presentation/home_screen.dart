@@ -111,12 +111,6 @@ class _CameraScreenState extends State<CameraScreen> {
                   tooltip: 'Elegir de galería',
                   color: const Color.fromARGB(255, 34, 176, 236),
                 ),
-                IconButton(
-                  onPressed: Placeholder.new,
-                  icon: const Icon(Icons.link, size: 36),
-                  tooltip: 'Ingresar URL',
-                  color: const Color.fromARGB(255, 34, 176, 236),
-                ),
               ],
             ),
           ],

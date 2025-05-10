@@ -4,7 +4,7 @@ publish_to: "none"
 version: 0.1.0
 
 environment:
-  sdk: ^3.7.2
+  sdk: ">=3.8.0-278.2.beta <4.0.0"
 
 dependencies:
   flutter:
@@ -13,6 +13,9 @@ dependencies:
   go_router: ^14.1.1
   permission_handler: ^11.3.0
   image_picker: ^1.0.4
+  tflite_flutter: ^0.10.4
+  tflite_flutter_processing:
+    path: ./flutter-tflite
 
 dev_dependencies:
   flutter_test:
