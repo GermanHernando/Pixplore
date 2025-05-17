@@ -4,6 +4,7 @@ import '../presentation/searchoption_screen.dart';
 import '../features/camera/camera_preview_screen.dart';
 import '../features/gallery/gallery_preview_screen.dart';
 import '../features/gallery/gallery_grid_screen.dart';
+import '../features/analysis/analysis_result_screen.dart';
 
 final appRouter = GoRouter(
   initialLocation: '/home',
@@ -26,6 +27,13 @@ final appRouter = GoRouter(
       builder: (context, state) {
         final imagePath = state.extra as String;
         return CameraPreviewScreen(imagePath: imagePath);
+      },
+    ),
+    GoRoute(
+      path: '/analysis',
+      builder: (context, state) {
+        final labels = state.extra as List<String>;
+        return AnalysisResultScreen(labels: labels);
       },
     ),
   ],

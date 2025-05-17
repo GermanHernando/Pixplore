@@ -46,3 +46,6 @@ app.*.map.json
 
 # FVM Version Cache
 .fvm/
+
+# aws credentials
+lib/core/aws_credentials.dart

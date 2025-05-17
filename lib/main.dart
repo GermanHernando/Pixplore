@@ -1,5 +1,3 @@
-// ignore: unused_import
-import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'core/app_router.dart';
 
